@@ -30,12 +30,11 @@ signed main()
         cnt[r]--;
     }
     for (Int i = 0; i < n; i++)
-    {
         cnt[i + 1] += cnt[i];
-    }
 
     Int ans = 0;
     for (Int i = 0; i < n; i++)
         ans += cnt[i] == m;
+    cout << ans << endl;
     return 0;
 }

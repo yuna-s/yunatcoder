@@ -12,7 +12,7 @@ int main()
     int n, m;
     int ans = 0;
     cin >> n >> m;
-    vector<int> s(m + 1, 0);
+    vector<int> s(n + 1, 0);
 
     rep(i, m)
     {
@@ -26,7 +26,10 @@ int main()
     rep(i, n)
     {
         s[i + 1] += s[i];
-        if (s[i + 1] == m)
+    }
+    rep(i, n)
+    {
+        if (s[i] == m)
             ans++;
     }
     cout << ans << endl;
