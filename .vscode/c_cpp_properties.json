@@ -3,7 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/local/Cellar/gcc/9.1.0/include/c++/9.1.0/x86_64-apple-darwin18"
             ],
             "defines": [],
             "macFrameworkPath": [
@@ -11,8 +12,9 @@
             ],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64"
+            "cppStandard": "c++14",
+            "intelliSenseMode": "clang-x64",
+            "compilerArgs": []
         }
     ],
     "version": 4

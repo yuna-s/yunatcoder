@@ -16,7 +16,7 @@ int main()
     vector<int> numList;
     cin >> n >> m;
 
-    priority_queue<pair<int, int>> q;
+    priority_queue<pair<int, int>,std::vector<pair<int, int>>, std::less<pair<int, int>> > q;
     rep(i, n)
     {
         int a;
